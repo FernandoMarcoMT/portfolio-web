@@ -161,7 +161,7 @@ export default function ExperiencePage() {
           <div className="relative">
             <div className="space-y-10 sm:space-y-16">
               {experiences.map((exp, index) => (
-                <div key={exp.id} className="group relative">
+                <div key={exp.id} id={`experience-${exp.id}`} className="group relative scroll-mt-28">
                   {index !== 0 && (
                     <div className="absolute top-0 left-1/2 w-1 h-10 sm:h-16 -translate-x-1/2 -translate-y-full bg-gradient-to-b from-blue-500/50 to-blue-500/50"></div>
                   )}

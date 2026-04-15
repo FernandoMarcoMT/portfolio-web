@@ -24,7 +24,7 @@ export default function Hero({
   secondaryButtonHref = "/cv.pdf",
 }: HeroProps) {
   return (
-    <section id="hero" className="relative min-h-screen bg-gradient-to-b from-slate-950 via-purple-950/50 to-slate-950 pt-20 pb-16 sm:pt-24 sm:pb-20 overflow-hidden">
+    <section id="hero" className="relative min-h-screen bg-gradient-to-b from-slate-950 via-purple-950/50 to-slate-950 pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <style>{`
           @keyframes twinkle {
@@ -64,7 +64,7 @@ export default function Hero({
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col items-center justify-center text-center gap-8 sm:gap-10">
-          <div className="relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 flex items-center justify-center">
+          <div className="hidden relative w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-r from-teal-500/30 via-cyan-500/30 to-purple-500/30 rounded-full blur-3xl"></div>
             <Image
               src={profileImage}

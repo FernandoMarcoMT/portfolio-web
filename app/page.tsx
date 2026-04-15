@@ -5,7 +5,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-black">
       <Navbar />
       <Hero
-        description="Fullstack Software Engineer focused on building scalable and reliable systems for real-world business needs. Experienced in developing enterprise applications, integrating payment systems, and designing microservices architectures using Next.js, NestJS, and Golang, with a strong emphasis on performance, maintainability, and production readiness."
+        description="Hi, I&apos;m Fernando Marco, a Fullstack Software Engineer focused on building scalable and reliable systems for real-world business needs. I have hands-on experience in developing enterprise applications, integrating payment systems, and designing microservices architectures using Next.js, NestJS, and Golang, with a strong emphasis on performance, maintainability, and production readiness."
       />
       <TechStack />
       <Projects />

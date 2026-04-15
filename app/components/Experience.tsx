@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { MdDomain } from "react-icons/md";
 
 interface ExperienceItem {
@@ -60,6 +61,11 @@ const defaultExperiences: ExperienceItem[] = [
 ];
 
 export default function Experience({ experiences = defaultExperiences }: ExperienceProps) {
+  const getExperienceHref = (id: string) => ({
+    pathname: "/experience",
+    hash: `experience-${id}`,
+  });
+
   return (
     <section id="experience" className="relative py-20 sm:py-28 bg-gradient-to-b from-slate-950 via-indigo-950/60 to-slate-950 overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
@@ -118,7 +124,7 @@ export default function Experience({ experiences = defaultExperiences }: Experie
 
               <div className="flex gap-6 sm:gap-8">
                 <div className="flex-shrink-0 relative">
-                  <div className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center flex-shrink-0 relative z-10 border-2 ${
+                  <Link href={getExperienceHref(exp.id)} aria-label={`View ${exp.position} details`} className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center shrink-0 relative z-10 border-2 transition-transform duration-300 hover:scale-105 focus-visible:scale-105 ${
                     exp.logo ? "bg-gray-900 border-blue-500" : "bg-gray-600 border-gray-500"
                   }`}>
                     {exp.logo && (
@@ -135,14 +141,14 @@ export default function Experience({ experiences = defaultExperiences }: Experie
                         <MdDomain className="w-8 h-8 sm:w-10 sm:h-10" />
                       </div>
                     )}
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="flex-grow pt-1 sm:pt-2">
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-0 mb-2">
-                    <h3 className="text-lg sm:text-xl font-bold text-white">
+                    <Link href={getExperienceHref(exp.id)} className="text-lg sm:text-xl font-bold text-white hover:text-blue-300 transition-colors">
                       {exp.position}
-                    </h3>
+                    </Link>
                     <span className="text-xs sm:text-sm text-gray-400 font-medium">
                       {exp.period}
                     </span>
@@ -159,9 +165,9 @@ export default function Experience({ experiences = defaultExperiences }: Experie
                   </p>
 
                   {/* Hover effect for expand */}
-                  <button className="text-blue-400 hover:text-blue-300 text-xs sm:text-sm font-semibold transition-colors">
+                  <Link href={getExperienceHref(exp.id)} className="text-blue-400 hover:text-blue-300 text-xs sm:text-sm font-semibold transition-colors inline-flex items-center">
                     Read More →
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

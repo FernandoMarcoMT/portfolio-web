@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FiGithub, FiLinkedin, FiTwitter, FiMail } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 interface SocialLink {
   icon: React.ComponentType<{ className?: string }>;
@@ -22,17 +22,12 @@ const defaultSocials: SocialLink[] = [
   },
   {
     icon: FiLinkedin,
-    href: "https://linkedin.com",
+    href: "https://www.linkedin.com/in/fernando-marco03/",
     label: "LinkedIn",
   },
   {
-    icon: FiTwitter,
-    href: "https://twitter.com",
-    label: "Twitter",
-  },
-  {
     icon: FiMail,
-    href: "mailto:hello@example.com",
+    href: "mailto:marco3072003@gmail.com",
     label: "Email",
   },
 ];

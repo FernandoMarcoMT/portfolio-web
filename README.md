@@ -16,6 +16,19 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Contact Form Email Setup
+
+The contact form now sends messages through a server-side API route.
+
+1. Copy `.env.example` to `.env.local`.
+2. Set your values:
+	- `RESEND_API_KEY`
+	- `CONTACT_RECEIVER_EMAIL`
+	- `CONTACT_FROM_EMAIL`
+3. Restart the dev server.
+
+You can get a Resend API key from https://resend.com.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
