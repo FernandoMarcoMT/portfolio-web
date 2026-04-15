@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Navbar, Footer } from "../components";
+import { Navbar, FooterCTA } from "../components";
 import { projects } from "./projectData";
 
 export default function ProjectsPage() {
@@ -134,9 +134,10 @@ export default function ProjectsPage() {
             ))}
           </div>
         </section>
+
       </main>
 
-      <Footer />
+      <FooterCTA />
     </div>
   );
 }

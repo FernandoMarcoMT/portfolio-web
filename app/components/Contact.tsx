@@ -90,7 +90,7 @@ export default function FooterCTA({
 
             {/* Email Button */}
             <Link
-              href={`mailto:${email}`}
+              href="/contact"
               className="inline-flex items-center gap-2 px-8 sm:px-10 py-3 sm:py-4 rounded-full bg-gradient-to-r from-orange-400 to-red-500 text-white font-semibold hover:shadow-lg hover:shadow-orange-500/50 transition-all duration-300 transform hover:scale-105"
             >
               <span>Get In Touch</span>

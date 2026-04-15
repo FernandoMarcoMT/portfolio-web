@@ -19,9 +19,9 @@ export default function Hero({
   profileImage = "/avatar.png",
   profileAlt = "Profile avatar",
   primaryButtonText = "Get in Touch",
-  primaryButtonHref = "#contact",
+  primaryButtonHref = "/contact",
   secondaryButtonText = "Download CV",
-  secondaryButtonHref = "/cv.pdf",
+  secondaryButtonHref = "/Fernando-Marco_CV.pdf",
 }: HeroProps) {
   return (
     <section id="hero" className="relative min-h-screen bg-gradient-to-b from-slate-950 via-purple-950/50 to-slate-950 pt-32 pb-16 sm:pt-40 sm:pb-20 overflow-hidden">
@@ -99,6 +99,8 @@ export default function Hero({
             </Link>
             <Link
               href={secondaryButtonHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 sm:px-10 py-3 sm:py-4 rounded-full border-2 border-gray-500 text-white font-semibold hover:border-gray-300 hover:bg-gray-900/50 transition-all duration-300 text-sm sm:text-base"
             >
               {secondaryButtonText}
