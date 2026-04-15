@@ -17,7 +17,7 @@ interface FooterCTAProps {
 const defaultSocials: SocialLink[] = [
   {
     icon: FiGithub,
-    href: "https://github.com",
+    href: "https://github.com/FernandoMarcoMT",
     label: "GitHub",
   },
   {

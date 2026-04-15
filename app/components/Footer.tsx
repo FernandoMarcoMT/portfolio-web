@@ -17,7 +17,7 @@ interface FooterProps {
 const defaultSocials: SocialLink[] = [
   {
     icon: FiGithub,
-    href: "https://github.com",
+    href: "https://github.com/FernandoMarcoMT",
     label: "GitHub",
   },
   {
@@ -113,10 +113,6 @@ export default function Footer({
               <span className="text-gray-700">•</span>
               <Link href="#" className="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition-colors">
                 Terms of Service
-              </Link>
-              <span className="text-gray-700">•</span>
-              <Link href="#" className="text-xs sm:text-sm text-gray-500 hover:text-gray-300 transition-colors">
-                Sitemap
               </Link>
             </div>
           </div>
