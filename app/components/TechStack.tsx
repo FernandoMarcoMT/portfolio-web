@@ -41,7 +41,6 @@ const defaultTechnologies = [
 export default function TechStack({ technologies = defaultTechnologies }: TechStackProps) {
   return (
     <section className="relative py-16 sm:py-20 bg-gradient-to-b from-slate-950 via-purple-950/60 to-slate-950 overflow-hidden">
-      {/* Background effects */}
       <div className="absolute inset-0 pointer-events-none">
         <style>{`
           @keyframes twinkle {
@@ -88,13 +87,11 @@ export default function TechStack({ technologies = defaultTechnologies }: TechSt
           </p>
         </div>
 
-        {/* Horizontal Scrolling Tech Stack */}
         <div className="relative overflow-hidden">
           {/* Gradient backgrounds for smooth edges */}
           <div className="absolute left-0 top-0 bottom-0 w-12 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none"></div>
           <div className="absolute right-0 top-0 bottom-0 w-12 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none"></div>
 
-          {/* Animated tech stack */}
           <div className="flex gap-4 sm:gap-6 pb-2" style={{ scrollBehavior: "smooth", scrollbarWidth: "none", msOverflowStyle: "none" }}>
             <style>{`
               div::-webkit-scrollbar {

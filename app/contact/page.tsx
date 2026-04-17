@@ -71,7 +71,6 @@ export default function ContactPage() {
 
     setIsSubmitting(true);
     try {
-      // Keep direct API send logic for easy reactivation after SMTP/API setup is ready.
       await sendViaApi();
       setSubmitMessage("Message sent successfully. I will get back to you soon.");
       setFormState(initialFormState);
